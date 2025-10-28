@@ -1,0 +1,6 @@
+_priority: 100
+remote:
+  anonymize: false
+  environment_overrides:
+    ^staging|^de?v|^qa:
+      anonymize: true

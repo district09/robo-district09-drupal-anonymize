@@ -1,0 +1,24 @@
+{
+    "name": "district09/robo-district09-drupal-anonymize",
+    "description": "Anonymize drupal backups using the [Configurable Anonymizer](https://www.drupal.org/project/configurable_anonymizer) module",
+    "license": "MIT",
+    "type": "robo-tasks",
+    "authors": [
+        {
+            "name": "Jelle Sebreghts",
+            "email": "sebreghts.jelle@gmail.com"
+        }
+    ],
+    "require": {
+        "digipolisgent/robo-digipolis-drupal8": "^5.0",
+        "digipolisgent/robo-digipolis-helpers": "^5.0.2"
+    },
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "District09\\Robo\\DrupalAnonymize\\": "src"
+        }
+    },
+    "config": {
+    }
+}
