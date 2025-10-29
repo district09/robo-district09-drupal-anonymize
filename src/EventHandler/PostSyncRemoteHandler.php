@@ -30,7 +30,7 @@ class PostSyncRemoteHandler extends AbstractTaskEventHandler implements ConfigAw
         $currentProjectRoot = $currentWebRoot = $remoteSettings['currentdir'] . '/..';
         $aliases = $remoteSettings['aliases'] ?: [0 => false];
         $collection = $this->collectionBuilder();
-        if (!$remoteConfig['anonymize']) {
+        if (!$remoteSettings['anonymize']) {
             return $collection;
         }
         $auth = new KeyFile($remoteConfig->getUser(), $remoteConfig->getPrivateKeyFile());
