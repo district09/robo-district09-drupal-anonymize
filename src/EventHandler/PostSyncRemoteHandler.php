@@ -47,7 +47,7 @@ class PostSyncRemoteHandler extends AbstractTaskEventHandler implements ConfigAw
 
             $collection->taskSsh($remoteConfig->getHost(), $auth)
                 ->remoteDirectory($currentProjectRoot, true)
-                ->timeout(300)
+                ->timeout(1800)
                 // Check if configurable_anonymizer is enabled & execute.
                 ->exec(
                     (string) $this->checkModuleCommand('configurable_anonymizer', $remoteSettings, $uri)
